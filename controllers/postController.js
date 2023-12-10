@@ -46,7 +46,7 @@ export async function postController(app, db, ObjectId) {
         })
       );
       fs.writeFile(
-        `./server/public/images/authors/${req.body.name}.${file.mimetype.slice(
+        `../public/images/authors/${req.body.name}.${file.mimetype.slice(
           6
         )}`,
         file.buffer,

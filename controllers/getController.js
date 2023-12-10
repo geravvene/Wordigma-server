@@ -1,9 +1,10 @@
+import path from 'path';
+
 export async function getController(app, db, ObjectId) {
   app.get('/public/:dir/:cat/:id', async (req, res) => {
+    console.log(app.get('appPath'))
     try {
-      res.sendFile(`/${req.params.dir}/${req.params.cat}/${req.params.id}`, {
-        root: 'C:/Wordigma/server/public',
-      });
+      res.sendFile(process.cwd() + `/public/${req.params.dir}/${req.params.cat}/${req.params.id}`);
     } catch (err) {
       console.log(err);
       res.sendStatus(500);

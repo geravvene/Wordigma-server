@@ -42,4 +42,4 @@ process.on("SIGINT", async () => {
   process.exit();
 });
 
-module.exports = app;
+export default app;

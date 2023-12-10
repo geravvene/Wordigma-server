@@ -1,7 +1,7 @@
 import * as fs from "fs";
 import multer from "multer";
 
-const host = "http://localhost:5172";
+const host = "https://wordigma-server-al8a.vercel.app/";
 const upload = multer();
 
 export async function postController(app, db, ObjectId) {
@@ -46,7 +46,7 @@ export async function postController(app, db, ObjectId) {
         })
       );
       fs.writeFile(
-        `./server//public/images/authors/${req.body.name}.${file.mimetype.slice(
+        `./server/public/images/authors/${req.body.name}.${file.mimetype.slice(
           6
         )}`,
         file.buffer,

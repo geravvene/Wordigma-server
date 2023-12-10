@@ -1,0 +1,11 @@
+[
+  {
+    "_id": {
+      "$oid": "6517a14d5cd82cf233f8cdb7"
+    },
+    "name": "romanov.e",
+    "password": "12345678",
+    "favorite": [],
+    "img": "https://sun7-18.userapi.com/impg/c855416/v855416577/231731/7fAeyQe8-DI.jpg?size=240x255&quality=96&sign=2e7dadb34f2dfc1cc7b44bd6e58ec221&type=album"
+  }
+]

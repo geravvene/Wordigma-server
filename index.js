@@ -6,7 +6,7 @@ import { putController } from './controllers/putController.js';
 import { postController } from './controllers/postController.js';
 
 const client = new MongoClient(
-  'mongodb+srv://geravvene:Mhcv3lAti7HZWEnd@wordigma.rmxf6nd.mongodb.net/?retryWrites=true'
+  'mongodb+srv://geravvene:NJxN8XPdTKMe84YF@wordigma.rmxf6nd.mongodb.net/'
 );
 
 const db = client.db('Wordigma');
